@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  font-family: "Poppins", sans-serif;
+  height: 10vh;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(117, 86, 204, 1) 0%,
+    rgba(213, 105, 167, 1) 90%
+  );
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(0, 51, 102, 1) 0%,
+    rgba(0, 102, 204, 1) 49.5%,
+    rgba(0, 191, 255, 1) 90%
+  );
+}
+.underline {
+  width: 200px;
+  height: 15%;
+  background-image: radial-gradient(
+    circle 957px at 1.9% 48.3%,
+    rgba(28, 61, 247, 1) 0%,
+    rgba(215, 64, 64, 1) 53.7%,
+    rgba(215, 64, 64, 1) 90%
+  );
+  border-radius: 20px;
+  animation-name: underline;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+  animation-iteration-count: 1;
+}
+@keyframes underline {
+  from {
+    background-image: radial-gradient(
+      circle 957px at 1.9% 48.3%,
+      rgba(28, 61, 247, 1) 0%,
+      rgba(215, 64, 64, 1) 53.7%,
+      rgba(215, 64, 64, 1) 90%
+    );
+  }
+  to {
+    background-image: radial-gradient(
+      circle 300.1px at 10% 20%,
+      rgba(231, 255, 19, 1) 0%,
+      rgba(255, 185, 22, 1) 100.3%
+    );
+
+    width: 400px;
+  }
+}
+
+.container {
+  background-image: radial-gradient(
+    circle farthest-corner at -5.6% -6.8%,
+    rgba(103, 49, 145, 1) 37.3%,
+    rgba(50, 0, 129, 1) 73.5%
+  );
+  height: 100vh;
+  width: 100%;
+  padding: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.card {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 2px solid white;
+  width: 270px;
+  height: 370px;
+  border-radius: 20px;
+  padding: 8px;
+  margin-top: -20px;
+  background-color: white;
+  box-shadow: 2px 3px 15px;
+  transition: all 0.4s linear;
+}
+.card:hover {
+  transform: scale(1.04, 1.04);
+}
+.img img {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+}
+.about-card p {
+  font-size: 0.8rem;
+  margin-top: 12px;
+}
+.card2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 2px solid white;
+  width: 300px;
+  height: 440px;
+  border-radius: 20px;
+  background-color: white;
+  margin-top: -20px;
+
+  box-shadow: 2px 3px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: all 0.4s linear;
+}
+.card2:hover {
+  transform: scale(1.04, 1.04);
+}
+.card2 img {
+  width: 100%;
+  height: 26%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.order-summary {
+  text-align: center;
+  padding: 15px;
+}
+.order-summary p {
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+.annual-plan {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(191, 234, 219);
+  width: 80%;
+  padding: 5px;
+  height: 35px;
+  font-size: 0.7rem;
+  border-radius: 10px;
+  align-self: center;
+}
+.annual-left {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+  position: relative;
+  left: 4px;
+}
+.change {
+  padding: 6px;
+}
+.price {
+  display: flex;
+  flex-direction: column;
+}
+.music-logo img {
+  width: 25px;
+  height: 25px;
+}
+.payment-btn {
+  display: flex;
+  justify-content: center;
+}
+button {
+  width: 80%;
+  height: 35px;
+  border-radius: 10px;
+  font-size: 0.65rem;
+  color: white;
+  background-color: rgba(0, 0, 139, 0.885);
+  box-shadow: 2px 7px 10px rgb(77, 76, 76);
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(1.04, 1.04);
+}
+.cancel-order {
+  align-self: center;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1399px) {
+  .container {
+    height: 100%;
+  }
+}
